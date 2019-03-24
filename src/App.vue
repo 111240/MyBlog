@@ -26,7 +26,7 @@
       <div v-else>
         <div id="app-body" ref="appBody">
           <Header :isEnter="isEnterHead" @enter="enterHead" @leave="leaveHead" @backHomePage="startLoading = false"/>
-          <div @mouseenter="isEnterCon = true" @mouseleave="isEnterCon = false" 
+          <div @mouseenter="isEnterCon = true" @mouseleave="isEnterCon = false" ref="appContent"
             :id="!isEnterCon ? 'app-menu-box-leave' : 'app-menu-box'" v-if="!showAppContent">
             <div v-for="(v, k) in menuList" :key="k" @mouseover="hoverMenuNum = k" 
               :style="'background-color:rgba(' + v.color + ',0.8);'"
@@ -203,7 +203,7 @@ export default {
       this.isAplayerTips = false;
     },
     watchSrcoll(e){
-      this.pageHeight = this.$refs.appContent.clientHeight;
+      this.pageHeight = this.$refs.appContent.clientHeight || this.$refs.appContent.innerHeight;
       this.topScroll = e.target.scrollTop;
       this.percent = parseInt((this.topScroll / this.pageHeight * 100) + 8);
       if(e.target.scrollTop > 0){

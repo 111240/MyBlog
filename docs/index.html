@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html lang=en>
-
-<head>
-  <meta charset=utf-8>
-  <meta http-equiv=X-UA-Compatible content="IE=edge">
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <link rel=icon href=/favicon.ico> <link href=https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css rel=stylesheet>
-  <title>my-blog</title>
-  <style>
-    #live2d {
-      position: fixed;
-      right: 10px;
-      bottom: 10px;
-      z-index: 1000;
-      cursor: move;
-      opacity: 0;
-      transition: opacity 3s;
-    }
-  </style>
-  <link href=/myblog/css/app.9384153f.css rel=preload as=style>
-  <link href=/myblog/css/chunk-vendors.8aa8b174.css rel=preload as=style>
-  <link href=/myblog/js/app.c7e8b886.js rel=preload as=script>
-  <link href=/myblog/js/chunk-vendors.53997de9.js rel=preload as=script>
-  <link href=/myblog/css/chunk-vendors.8aa8b174.css rel=stylesheet>
-  <link href=/myblog/css/app.9384153f.css rel=stylesheet>
-</head>
-
-<body><canvas id=live2d width=270 height=300></canvas>
-  <script src=https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js> </script> <script
-    src=https://cdn.zhangxinxu.com/sp/demo/live2d/live2d/js/live2d.js> </script> <script>loadlive2d('live2d', './live2d/model.json');
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><link href=https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css rel=stylesheet><title>my-blog</title><style>#live2d{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1000;
+        cursor: move;
+        opacity: 0;
+        transition: opacity 3s;
+      }</style><link href=myblog/css/app.9f9476a2.css rel=preload as=style><link href=myblog/css/chunk-vendors.75a65998.css rel=preload as=style><link href=myblog/js/app.23799954.js rel=preload as=script><link href=myblog/js/chunk-vendors.53997de9.js rel=preload as=script><link href=myblog/css/chunk-vendors.75a65998.css rel=stylesheet><link href=myblog/css/app.9f9476a2.css rel=stylesheet></head><body><canvas id=live2d width=270 height=300></canvas><script src=https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js></script><script src=https://cdn.zhangxinxu.com/sp/demo/live2d/live2d/js/live2d.js></script><script>loadlive2d('live2d', './live2d/model.json');
       let canvasBox = document.getElementById('live2d');
       canvasBox.onmousedown = e => {
         let disX = e.clientX - e.target.offsetLeft;
@@ -46,6 +24,4 @@
       }
       setTimeout(() => {
         document.getElementById('live2d').style.opacity = '1';
-      }, 200);</script>
-  <div id=app></div>
-  <script src=/myblog/js/chunk-vendors.53997de9.js> </script> <script src=/myblog/js/app.c7e8b886.js> </script> </body> </html>
+      },200);</script><div id=app></div><script src=myblog/js/chunk-vendors.53997de9.js></script><script src=myblog/js/app.23799954.js></script></body></html>

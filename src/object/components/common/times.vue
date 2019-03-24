@@ -8,7 +8,9 @@ export default {
   name: 'Times',
   mounted(){
     this.drawClock();
-    setInterval(this.drawClock, 1000);
+    this.$nextTick(() => {
+      setInterval(this.drawClock, 1000);
+    });
   },
   methods: {
   //定义一个函数绘制时钟
