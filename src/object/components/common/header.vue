@@ -2,8 +2,8 @@
   <div class="common-header">
     <div :class="isEnter ? 'common-header-item-enter' : 'common-header-item'" class="common-header-item"
       @mouseenter="enter" @mouseleave="leave">
-        <div class="header-foo">
-          <span class="letter" data-letter="皮皮毅の小屋">皮皮毅の小屋</span>
+        <div class="header-foo" @click="backHome">
+          <span class="letter" data-letter="皮皮毅の小屋>>">皮皮毅の小屋>></span>
         </div>
       </div>
     <div style="height: 70px;"></div>
@@ -29,6 +29,9 @@ export default {
     },
     leave(){
       this.$emit('leave')
+    },
+    backHome(){
+      this.$emit('backHomePage')
     }
   }
 }

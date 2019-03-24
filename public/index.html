@@ -14,13 +14,12 @@
         bottom: 10px;
         z-index: 1000;
         cursor: move;
+        opacity: 0;
+        transition: opacity 3s;
       }
     </style>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but my-blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <canvas id="live2d" width="270" height="300"></canvas>
     <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
     <script src="https://cdn.zhangxinxu.com/sp/demo/live2d/live2d/js/live2d.js"></script>
@@ -41,6 +40,9 @@
           e.target.style.top = top + 'px';
         }
       }
+      setTimeout(() => {
+        document.getElementById('live2d').style.opacity = '1';
+      },200);
     </script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
