@@ -1,0 +1,64 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "model",
+	"model": "model.moc",
+	"textures": [
+		"model.2048/texture_00.png"
+	],
+	"motions":{
+		"idle":[
+			{"file":"motions/Idle.mtn"}
+		],
+        "sleepy":[
+            {"file":"motions/Nemui.mtn"}
+        ],
+		"flick_head":[
+			{"file":"motions/Anone_Synced.mtn"}
+		],
+		"tap_body":[
+			{"file":"motions/Dance.mtn"}
+		],
+		"shake": [
+            {"file": "motions/Nemui.mtn"}
+        ],
+        "tap_face": [
+            {"file": "motions/Nemui.mtn"}
+        ],
+        "tap_breast": [
+            {"file": "motions/Anone_Synced.mtn"}
+        ],
+        "tap_belly": [
+            {"file": "motions/Anone_Synced.mtn"}
+        ],
+        "tap_leg": [
+            {"file": "motions/Dance.mtn"}
+        ],
+        "mail": [
+            {"file": "motions/Idle.mtn"}
+        ],
+        "morning": [
+            {"file": "motions/Idle.mtn"}
+        ],
+        "activity": [
+            {"file": "motions/Idle.mtn"}
+        ],
+        "born": [
+            {"file": "motions/Dance.mtn"}
+        ],
+        "friend": [
+            {"file": "motions/Idle.mtn"}
+        ],
+        "afternoon": [
+            {"file": "motions/Idle.mtn"}
+        ],
+        "evening": [
+            {"file": "motions/Idle.mtn"}
+        ]
+	},
+	"hit_areas_custom": {
+        "head_x": [-0.35, 0.6],
+        "head_y": [0.19, -0.2],
+        "body_x": [-0.3, -0.25],
+        "body_y": [0.3, -0.9]
+    }
+}
