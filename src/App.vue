@@ -203,7 +203,7 @@ export default {
       this.isAplayerTips = false;
     },
     watchSrcoll(e){
-      this.pageHeight = this.$refs.appContent.innerHeight || this.$refs.appContent.clientHeight;
+      this.pageHeight = this.$refs.appContent.clientHeight;
       this.topScroll = e.target.scrollTop;
       this.percent = parseInt((this.topScroll / this.pageHeight * 100) + 8);
       if(e.target.scrollTop > 0){
