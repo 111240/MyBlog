@@ -8,7 +8,7 @@
         <canvas id="c1"></canvas>
         <canvas id="c2"></canvas>
         <div class="foo">
-          <span class="letter" data-letter="皮皮毅的小屋">皮皮毅的小屋</span>
+          <span class="letter" data-letter="皮皮毅の小屋">皮皮毅の小屋</span>
         </div>
         <stars />
         <transition enter-active-class="animated lightSpeedIn" leave-active-class="animated lightSpeedOut">
@@ -25,7 +25,7 @@
       </div>
       <div v-else>
         <div id="app-body" ref="appBody">
-          <Header :isEnter="isEnterHead" @enter="enterHead" @leave="leaveHead" @backHomePage="startLoading = false"/>
+          <Header :isEnter="isEnterHead" @enter="enterHead" @leave="leaveHead" @backHomePage="backHomePage"/>
           <div @mouseenter="isEnterCon = true" @mouseleave="isEnterCon = false" ref="appContent"
             :id="!isEnterCon ? 'app-menu-box-leave' : 'app-menu-box'" v-if="!showAppContent">
             <div v-for="(v, k) in menuList" :key="k" @mouseover="hoverMenuNum = k" 
@@ -198,6 +198,9 @@ export default {
     }
   },
   methods: {
+    backHomePage(){
+      this.startLoading = false;
+    },
     playAplayer(){
       this.aPlayerBox.play();
       this.isAplayerTips = false;
