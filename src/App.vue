@@ -8,7 +8,7 @@
         <canvas id="c1"></canvas>
         <canvas id="c2"></canvas>
         <div class="foo">
-          <span class="letter" data-letter="皮皮毅の小屋">毅の小屋</span>
+          <span class="letter" data-letter="毅の小屋">毅の小屋</span>
         </div>
         <stars />
         <transition enter-active-class="animated lightSpeedIn" leave-active-class="animated lightSpeedOut">
